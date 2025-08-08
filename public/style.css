@@ -1,0 +1,106 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f8f9f8;
+    }
+    header {
+        background: url('banner.jpg') no-repeat center/cover;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    header button {
+        background: white;
+        border: none;
+        padding: 5px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .top-button {
+        display: block;
+        background: #1b5e4b;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        font-size: 18px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    nav {
+        display: flex;
+        background: #e2eae8;
+        padding: 8px 20px;
+        gap: 5px;
+    }
+    nav button {
+        flex: 1;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 8px 8px 0 0;
+        padding: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    main {
+        display: flex;
+        padding: 10px 20px;
+        gap: 15px;
+    }
+    .left-panel {
+        flex: 2;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .processo {
+        background: #d5e9e2;
+        padding: 8px;
+        margin-bottom: 8px;
+        border-radius: 6px;
+    }
+    .processo h3 {
+        margin: 0 0 5px;
+        font-size: 15px;
+    }
+    .processo li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .green { background: green; }
+    .orange { background: orange; }
+    .red { background: red; }
+    .right-panel {
+        flex: 1;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .btn-relatorio {
+        width: 100%;
+        background: #1b5e4b;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
