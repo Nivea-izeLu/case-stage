@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/public/style.css" media="s-">
+<link rel="stylesheet" href="style.css">
 <title>Mapeamento de Processos</title>
 </head>
 <body>
@@ -27,7 +27,9 @@
                 <li><span class="dot green"></span>Triagem de currículos</li>
                 <li><span class="dot orange"></span>Entrevistas</li>
                 <li><span class="dot red"></span>Oferta de contratação</li>
+                <button class="btnEditar" onclick="Edit1_1()">✎</button> 
             </ul>
+           
         </div>
         <div class="processo">
             <h3>Avaliação de Performance</h3>
@@ -35,6 +37,7 @@
                 <li><span class="dot green"></span>Definição de critérios de avaliação</li>
                 <li><span class="dot green"></span>Aplicação de avaliações trimestrais</li>
                 <li><span class="dot orange"></span>Feedbacks</li>
+                <button class="btnEditar">✎</button> 
             </ul>
         </div>
         <div class="processo">
@@ -52,6 +55,7 @@
                     <span class="dot red"></span>
                     Devolução de equipamentos
                 </li>
+                <button class="btnEditar">✎</button> 
             </ul>
         </div>
         <button class="btn-relatorio">Gerar Relatório</button>
@@ -91,6 +95,12 @@
         const mensagem = urlParams.get('mensagem');
         if (mensagem === 'sucesso') {
             alert('Inserido com sucesso!');
+        }
+
+        function Edit1_1() {
+            const newSub = document.createElement('input type="text" placeholder= "nome do subprocesso"')
+            newSub.innerHTML;
+            li.appendChild(newSub);
         }
 </script>
 

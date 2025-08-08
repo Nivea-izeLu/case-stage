@@ -3,6 +3,17 @@ body {
         margin: 0;
         background-color: #f8f9f8;
     }
+
+.btnEditar{
+        font-size: 20px;
+        position: relative;
+        float: right;
+        background-color: transparent;
+        border: none;
+        
+}
+
+
     header {
         background: url('banner.jpg') no-repeat center/cover;
         padding: 15px 20px;
