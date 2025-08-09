@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Mapeamento de Processos</title>
+</head>
+<body>
+<header>
+    <h1>Empresa Fictícia</h1>
+    <button> Sair</button>
+</header>
+<button class="top-button">Mapeamento de Processos</button>
+<nav>
+    <button>Visualizar</button>
+    <button>Editar</button>
+    <button>Diagrama</button>
+</nav>
+<main>
+    <div class="left-panel">
+        <div class="processo">
+            <h3>Recrutamento e Seleção</h3>
+            <ul>
+                <li><span class="dot green"></span>Definição de perfil da vaga</li>
+                <li><span class="dot green"></span>Divulgação da vaga</li>
+                <li><span class="dot green"></span>Triagem de currículos</li>
+                <li><span class="dot orange"></span>Entrevistas</li>
+                <li><span class="dot red"></span>Oferta de contratação</li>
+                <button class="btnEditar" onclick="Edit1_1()">✎</button> 
+            </ul>
+           
+        </div>
+        <div class="processo">
+            <h3>Avaliação de Performance</h3>
+            <ul>
+                <li><span class="dot green"></span>Definição de critérios de avaliação</li>
+                <li><span class="dot green"></span>Aplicação de avaliações trimestrais</li>
+                <li><span class="dot orange"></span>Feedbacks</li>
+                <button class="btnEditar">✎</button> 
+            </ul>
+        </div>
+        <div class="processo">
+            <h3>Desligamento</h3>
+            <ul>
+                <li>
+                    <span class="dot green"></span>
+                    Notificação formal de desligamento
+                </li>
+                <li>
+                    <span class="dot orange"></span>
+                    Processamento da rescisão
+                </li>
+                <li>
+                    <span class="dot red"></span>
+                    Devolução de equipamentos
+                </li>
+                <button class="btnEditar">✎</button> 
+            </ul>
+        </div>
+        <button class="btn-relatorio">Gerar Relatório</button>
+    </div>
+    <div class="right-panel">
+        <h4>Recrutamento e Seleção</h4>
+        <p>
+            <strong>Ferramentas:</strong>
+        </p>
+        <ul>
+            <li>xxxxx</li>
+            <li>xxxxx</li>
+        </ul>
+        <p>
+            <strong>Documentação:</strong>
+        </p>
+        <ul>
+            <li>xxxxx</li>
+            <li>xxxxx</li>
+        </ul>
+        <p>
+            <strong>Responsáveis:</strong>
+        </p>
+        <ul>
+            <li>xxxxx</li>
+            <li>xxxxx</li>
+        </ul>
+        <p>
+            <strong>Observações:</strong>
+        </p>
+        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+</main>
+
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const mensagem = urlParams.get('mensagem');
+        if (mensagem === 'sucesso') {
+            alert('Inserido com sucesso!');
+        }
+
+        function Edit1_1() {
+            const newSub = document.createElement('input type="text" placeholder= "nome do subprocesso"')
+            newSub.innerHTML;
+            li.appendChild(newSub);
+        }
+</script>
+
+</body>
+</html>
