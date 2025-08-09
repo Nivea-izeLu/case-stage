@@ -8,14 +8,16 @@ CREATE TABLE AREA (
     nome_area VARCHAR(50) NOT NULL  
     );
 
-    --adicionar nova area
+    -- adicionar nova area
+DELIMITER //
     CREATE PROCEDURE addArea(
         IN p_nome_area VARCHAR(50)
     )
     BEGIN
         INSERT INTO AREA(nome_area)
         VALUES (p_nome_area)
-    END;
+    END //
+DELIMITER ;
     --atualizar dados de area
     CREATE PROCEDURE updateArea(
         IN p_id_area INT,

@@ -1,0 +1,119 @@
+{"Area": [
+    {
+    "nome_area": "Pessoas"
+    }
+],
+"Processo":[
+    {
+    "nome_processo": "Recrutamento e Seleção",
+    "id_area":1
+    },
+    {
+    "nome_processo": "Avaliação de Performance",
+    "id_area":1
+    },
+    {
+    "nome_processo": "Desligamento",
+    "id_area":1
+    }
+],
+"Detalhe":[
+    {
+    "ferramentas": "Trello, Notion, Excel, Word", 
+    "documentacao": "Fluxo de recrutamento, Guias de entrevista",
+    "responsaveis":"ana.medeiros@empresa.com, joao.figueredo@empresa.com, marina.wolfgang@empresa.com, fábio.melo@empresa.com",
+    "observacao":"Executado pela Equipe de Recrutamento dia 13/02/2026.",
+    "id_processo":1
+    },
+    {
+    "ferramentas": "Trello, Notion, Excel, Word",
+    "documentacao": "Modelo de performance, Relatórios de feedback.", 
+    "responsaveis":"ana.medeiros@empresa.com, joao.figueredo@empresa.com, marina.wolfgang@empresa.com, fábio.melo@empresa.com",
+    "observacao":"Executado pela Equipe de  RH e gestores dia 04/05/2026.",
+    "id_processo":2
+    },
+    {
+    "ferramentas": "Trello, Notion, Excel, Word",
+    "documentacao": "Procedimento de desligamento, Formulários rescisão.", 
+    "responsaveis":"ana.medeiros@empresa.com, joao.figueredo@empresa.com, marina.wolfgang@empresa.com, fábio.melo@empresa.com",
+    "observacao":"Executado pela Equipe de RH e administrativo dia 26/11/2026.",
+    "id_processo":3
+    }
+],
+"Subprocesso":[
+    {
+    "nome_sub": " Divulgação da vaga",
+    "status_sub":"finalizado",
+    "id_processo":1
+    },
+    {
+    "nome_sub": "Definição de perfil da vaga ",
+    "status_sub":"finalizado",
+    "id_processo":1
+    },
+    {
+    "nome_sub": "Triagem de currículos ",
+    "status_sub":"finalizado",
+    "id_processo":1
+    },
+    {
+    "nome_sub": "Entrevistas",
+    "status_sub":"processando",
+    "id_processo":1
+    },
+    {
+    "nome_sub": "Oferta de contratação ",
+    "status_sub":"pendente",
+    "id_processo":1
+    },
+
+    {
+    "nome_sub": "Definição de critérios de avaliação ",
+    "status_sub":"finalizado",
+    "id_processo":2
+    },
+    {
+    "nome_sub": "Aplicação de avaliações trimestrais",
+    "status_sub":"finalizado",
+    "id_processo":2
+    },
+    {
+    "nome_sub": "Feedbacks",
+    "status_sub":"processando",
+    "id_processo":2
+    },
+
+    {
+    "nome_sub": "Notificação formal de desligamento",
+    "status_sub":"finalizado",
+    "id_processo":3
+    },
+    {
+    "nome_sub": "Processamento da rescisão",
+    "status_sub":"procesando",
+    "id_processo":3
+    },
+    {
+    "nome_sub": " Devolução de equipamentos",
+    "status_sub":"pendente",
+    "id_processo":3
+    }
+],
+"Sub-subprocesso":[
+    {
+    "nome_sub_sub":"", 
+    "status_sub_sub":"",
+    "id_sub":1
+    },
+     {
+    "nome_sub_sub":"", 
+    "status_sub_sub":"",
+    "id_sub":2
+    },
+     {
+    "nome_sub_sub":"", 
+    "status_sub_sub":"",
+    "id_sub":3 
+    }
+]
+}
