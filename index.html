@@ -10,26 +10,32 @@
 <body>
     <header>
         <div class="logo">
-            <img src="public/midia/logo.png" alt="Logo EF">
+            <img src="public/img/logo.png" alt="Logo da Empresa">
         </div>
         <nav>
             <a href="#">Administração</a>
             <a href="#">Pagamentos</a>
-            <a href="#" class="active">Mapeamentos</a>
+            <a href="#" class="active"><p>Mapeamentos</p></a>
             <a href="#">Funcionários</a>
             <a href="#">Fornecedores</a>
         </nav>
-        <button class="icon-btn">→</button>
     </header>
+
     <div class="login-box">
-        <h2>Identificação</h2>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="funcionario@empresa.com">
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="******">
-        <label for="idnum">Num. Identificação</label>
-        <input type="text" id="idnum" placeholder="01234">
-        <button>Enter</button>
+            <h2>Identificação</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="funcionario@empresa.com" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="******" required>
+            <label for="idnum">Nº Identificação</label>
+            <input type="number" id="idnum" placeholder="01234" required>
+            <button>
+                <a href="public/Empresa Ficticia.html">Login</a>
+            </button>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Empresa Fictícia. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
