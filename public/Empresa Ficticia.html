@@ -22,87 +22,136 @@
     <div id="perfil">
         <p>Funcionario@empresa.com</p>
         <p>Id: 01234</p>
-        <button><a href="../index.html">Logout</a></button>
+        <button><a href="../index.html" target="_blank">Logout</a></button>
     </div>
 
 <nav> 
-    <button id="visu">Visualizar</button>
-    <button id="edit">Editar</button>
+    <button id="visu" onclick="visualizar()">Visualizar</button>
+    <button id="edit" onclick="editar()">Editar</button>
     <button id="diag">Diagrama</button>
     <div class="top-button">Mapeamento de Processos</div>
 </nav>
 
 
 <main>
-    <div class="left-panel">
+    <div class="left-panel" id="v1">
+
+        <div class="area">
+            <b id="a">⇦</b>
+            <p>Área</p>
+            <p id="selected">Pessoas</p>
+            <p>Área 3</p>
+            <b id="b">⇨</b>
+        </div>
         <div class="processo">
             <h3>Recrutamento e Seleção</h3>
-            <ul>
-                <li><span class="dot green"></span>Definição de perfil da vaga</li>
-                <li><span class="dot green"></span>Divulgação da vaga</li>
-                <li><span class="dot green"></span>Triagem de currículos</li>
-                <li><span class="dot orange"></span>Entrevistas</li>
-                <li><span class="dot red"></span>Oferta de contratação</li>
-                <button class="btnEditar" onclick="Edit1_1()">✎</button> 
+                <ul>
+                    <li>
+                        <span class="dot green"></span>Definição de perfil da vaga
+                    </li>
+                    <li>
+                        <span class="dot green"></span>Divulgação da vaga
+                    </li>
+                    <li>
+                        <span class="dot green"></span>Triagem de currículos
+                    </li>
+                    <li>
+                        <span class="dot orange"></span>Entrevistas
+                    </li>
+                    <li>
+                        <span class="dot red"></span>Oferta de contratação
+                    </li>
+
+                    <button class="btnEditar" id="b1" onclick="Edit1_1()">✎</button> 
             </ul>
-           
         </div>
+
         <div class="processo">
             <h3>Avaliação de Performance</h3>
-            <ul>
-                <li><span class="dot green"></span>Definição de critérios de avaliação</li>
-                <li><span class="dot green"></span>Aplicação de avaliações trimestrais</li>
-                <li><span class="dot orange"></span>Feedbacks</li>
-                <button class="btnEditar">✎</button> 
-            </ul>
+                <ul>
+                    <li>
+                        <span class="dot green"></span>Definição de critérios de avaliação
+                    </li>
+                    <li>
+                        <span class="dot green"></span>Aplicação de avaliações trimestrais
+                    </li>
+                    <li>
+                        <span class="dot orange"></span>Feedbacks
+                    </li>
+
+                    <button class="btnEditar" id="b2" >✎</button> 
+                </ul>
         </div>
+
+
         <div class="processo">
             <h3>Desligamento</h3>
-            <ul>
-                <li>
-                    <span class="dot green"></span>
-                    Notificação formal de desligamento
-                </li>
-                <li>
-                    <span class="dot orange"></span>
-                    Processamento da rescisão
-                </li>
-                <li>
-                    <span class="dot red"></span>
-                    Devolução de equipamentos
-                </li>
-                <button class="btnEditar">✎</button> 
-            </ul>
+                <ul>
+                    <li>
+                        <span class="dot green"></span>
+                        Notificação formal de desligamento
+                    </li>
+                    <li>
+                        <span class="dot orange"></span>
+                        Processamento da rescisão
+                    </li>
+                    <li>
+                        <span class="dot red"></span>
+                        Devolução de equipamentos
+                    </li>
+                    <button class="btnEditar" id="b3" >✎</button> 
+                </ul>
         </div>
-        <button class="btn-relatorio">Gerar Relatório</button>
+        
+            <p id="add">Novo Processo +</p>
+
+            <button class="btn-relatorio" id="rs">
+                <a href="doc/Relatório de Processos.pdf" target="_blank"> Gerar Relatório <a id="sa">Salvar Edição</a></a>
+            </button>
+
     </div>
-    <div class="right-panel">
-        <h4>Recrutamento e Seleção</h4>
+
+
+    <div class="detalhe" id="v2">
+        <select>
+            <option>Recrutamento e Seleção</option> 
+            <option>Avaliação de Performance</option>
+            <option>Desligamento</option>
+        </select>
         <p>
             <strong>Ferramentas:</strong>
         </p>
         <ul>
-            <li>xxxxx</li>
-            <li>xxxxx</li>
+            <li>Trello</li>
+            <li>Notion</li>
+            <li>Excel</li>
+            <li>Word</li>
         </ul>
         <p>
             <strong>Documentação:</strong>
         </p>
         <ul>
-            <li>xxxxx</li>
-            <li>xxxxx</li>
+            <li>
+                <a href="doc/Fluxo de Recrutamento.pdf" target="_blank">Fluxo de Recrutamento</a>
+            </li>
+            <li>
+                <a href="doc/Guias de Entrevista.pdf" target="_blank">Guias de Entrevista</a>
+            </li>
         </ul>
         <p>
             <strong>Responsáveis:</strong>
         </p>
         <ul>
-            <li>xxxxx</li>
-            <li>xxxxx</li>
+            <li>ana.medeiros@empresa.com</li>
+            <li>joao.figueredo@empresa.com</li>
+            <li>marina.wolfgang@empresa.com</li>
+            <li>fábio.melo@empresa.com</li>
         </ul>
         <p>
             <strong>Observações:</strong>
         </p>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <p id="obs">Executado pela Equipe de Recrutamento dia 13/02/2026.</p>
+        <button class="btnEditar" id="b4" >✎</button>
     </div>
 </main>
  <footer>
